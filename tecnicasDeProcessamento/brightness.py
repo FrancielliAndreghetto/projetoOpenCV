@@ -16,7 +16,7 @@ else:
     ajuste_brilho = 0 
 
 imagemTransformada = cv2.convertScaleAbs(imagem, alpha=1, beta=ajuste_brilho)
-pastaDestino = 'imagensFormatadas'
+pastaDestino = 'imagensProcessadas'
 os.makedirs(pastaDestino, exist_ok=True)
 pastaTransformada = os.path.join(pastaDestino, 'imagem_com_brilho.jpg')
 cv2.imwrite(pastaTransformada, imagemTransformada)
