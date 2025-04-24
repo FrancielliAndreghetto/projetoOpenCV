@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import os
 
-GENDER_MODEL = "dani/models/gender_net.caffemodel"
-GENDER_PROTO = "dani/models/deploy_gender.prototxt"
+GENDER_MODEL = "solucaoProblema/models/gender_net.caffemodel"
+GENDER_PROTO = "solucaoProblema/models/deploy_gender.prototxt"
 
 GENDER_LIST = ['HOMEM', 'MULHER']
 
