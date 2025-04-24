@@ -28,6 +28,9 @@ caminhoSaida = os.path.join(pastaDestino, 'imagem_com_threshold.jpg')
 cv2.imwrite(caminhoSaida, imagem_threshold)
 print(f'Imagem com threshold salva em: {caminhoSaida}')
 
+# Cria uma janela redimensionável
+cv2.namedWindow('Imagem com Threshold', cv2.WINDOW_NORMAL)
+
 # Exibe a imagem com threshold
 cv2.imshow('Imagem com Threshold', imagem_threshold)
 

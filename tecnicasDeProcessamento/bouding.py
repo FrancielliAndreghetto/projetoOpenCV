@@ -34,6 +34,9 @@ caminhoSaida = os.path.join(pastaDestino, 'imagem_com_rostos.jpg')
 cv2.imwrite(caminhoSaida, imagem)
 print(f'Imagem com rostos anotados salva em: {caminhoSaida}')
 
+# Cria uma janela redimensionável
+cv2.namedWindow('Imagem com Rostos Anotados', cv2.WINDOW_NORMAL)
+
 # Exibe a imagem com as anotações
 cv2.imshow('Imagem com Rostos Anotados', imagem)
 

@@ -32,6 +32,9 @@ pastaTransformada = os.path.join(pastaDestino, 'imagem_com_brilho.jpg')
 cv2.imwrite(pastaTransformada, imagemTransformada)
 print(f'Imagem salva em: {pastaTransformada}')
 
+# Cria uma janela redimensionável
+cv2.namedWindow('Imagem com Brilho Ajustado', cv2.WINDOW_NORMAL)
+
 # Exibe a imagem com brilho ajustado
 cv2.imshow('Imagem com Brilho Ajustado', imagemTransformada)
 

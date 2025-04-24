@@ -21,6 +21,9 @@ caminhoSaida = os.path.join(pastaDestino, 'imagem_com_bordas.jpg')
 cv2.imwrite(caminhoSaida, bordas)
 print(f'Imagem com bordas salva em: {caminhoSaida}')
 
+# Cria uma janela redimensionável
+cv2.namedWindow('Imagem com Bordas', cv2.WINDOW_NORMAL)
+
 # Exibe a imagem na tela
 cv2.imshow('Imagem com Bordas', bordas)
 
